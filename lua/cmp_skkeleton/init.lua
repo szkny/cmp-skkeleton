@@ -90,7 +90,7 @@ source._get_prefix = function(_)
 end
 
 source._get_candidates = function(_)
-  return vim.fn['denops#request']('skkeleton', 'getCandidates', {})
+  return vim.fn['denops#request']('skkeleton', 'getCompletionResult', {})
 end
 
 source._register_candidate = function(_, kana, word)
