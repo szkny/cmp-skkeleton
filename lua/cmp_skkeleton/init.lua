@@ -94,7 +94,7 @@ source._get_candidates = function(_)
 end
 
 source._register_candidate = function(_, kana, word)
-  return vim.fn['denops#request']('skkeleton', 'registerCandidate', {kana, word})
+  return vim.fn['denops#request']('skkeleton', 'registerHenkanResult', {kana, word})
 end
 
 return source
